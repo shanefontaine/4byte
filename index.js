@@ -2,7 +2,7 @@ const request = require('request');
 
 function fourByte(hash) {
   if (hash.length !== 10) {
-    throw new Error('Expected Buffer or string as argument');
+    throw new Error('Expected valid hash');
   }
 
   const url = 'https://www.4byte.directory/api/v1/signatures/?hex_signature=' + hash;
