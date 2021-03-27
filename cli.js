@@ -5,7 +5,7 @@ const cli = meow(`
     Usage
       $ four-byte <hash-of-function-sig>
 
- git@github.com:shanefontaine/four-byte.git   Examples
+    Examples
       $ four-byte 0x51c6590a
       addLiquidity(uint256)
 `, {
@@ -18,9 +18,6 @@ if (process.stdin) {
   process.stdin.setEncoding('utf8')
   process.stdin.resume()
   let content = ''
-  process.stdin.on('data', (buf) => {
-    content += buf.toString()
-  })
   setTimeout(() => {
     content = content.trim()
 
@@ -34,12 +31,17 @@ if (process.stdin) {
   run()
 }
 
-function run() {
+async function run() {
   if (!hash) {
     console.log('Hash is required')
     process.exit(1)
   }
 
-  console.log(fourByte(hash))
+  if (hash.length !== 10) {
+    console.log('Hash must be 10 characters')
+    process.exit(1)
+  }
+
+  console.log(await fourByte(hash.toLowerCase()))
   process.exit(0)
 }
