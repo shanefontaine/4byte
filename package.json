@@ -9,8 +9,7 @@
   },
   "scripts": {
     "test": "tape test/*.js",
-    "lint": "standard --fix index.js test/test.js example/example.js",
-    "build:example": "browserify example/main.js -o example/dist/bundle.js"
+    "lint": "standard --fix *.js test/*.js"
   },
   "repository": {
     "type": "git",
@@ -43,8 +42,7 @@
     "sha3"
   ],
   "devDependencies": {
-    "browserify": "^16.5.1",
     "standard": "^12.0.1",
-    "tape-async": "^2.3.0"
+    "tape": "^5.2.2"
   }
 }
