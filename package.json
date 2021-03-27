@@ -28,7 +28,8 @@
   "license": "MIT",
   "url": "https://github.com/shanefontaine/four-byte/blob/master/LICENSE",
   "dependencies": {
-    "meow": "^5.0.0"
+    "meow": "^5.0.0",
+    "node-fetch": "2.6.1"
   },
   "keywords": [
     "ethereum",
@@ -44,6 +45,6 @@
   "devDependencies": {
     "browserify": "^16.5.1",
     "standard": "^12.0.1",
-    "tape": "^4.10.2"
+    "tape-async": "^2.3.0"
   }
 }
