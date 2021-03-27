@@ -1,11 +1,10 @@
 {
-  "name": "four-byte",
+  "name": "4byte",
   "version": "0.0.1",
   "description": "Look up an Ethereum function signature by the 4 bytes of its hash",
   "main": "index.js",
   "bin": {
-    "four-byte": "bin/four-byte",
-    "four_byte": "bin/four-byte"
+    "4byte": "bin/4byte"
   },
   "scripts": {
     "test": "tape test/*.js",
@@ -13,19 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shanefontaine/four-byte"
+    "url": "https://github.com/shanefontaine/4byte"
   },
   "bugs": {
-    "url": "https://github.com/shanefontaine/four-byte/issues"
+    "url": "https://github.com/shanefontaine/4byte/issues"
   },
-  "homepage": "https://github.com/shanefontaine/four-byte",
+  "homepage": "https://github.com/shanefontaine/4byte",
   "author": {
     "name": "Shane Fontaine",
     "email": "shane6fontaine@gmail.com",
     "url": "https://shane.dev/"
   },
   "license": "MIT",
-  "url": "https://github.com/shanefontaine/four-byte/blob/master/LICENSE",
+  "url": "https://github.com/shanefontaine/4byte/blob/master/LICENSE",
   "dependencies": {
     "meow": "^5.0.0",
     "node-fetch": "2.6.1"

@@ -3,10 +3,10 @@ const fourByte = require('.')
 
 const cli = meow(`
     Usage
-      $ four-byte <hash-of-function-sig>
+      $ 4byte <hash-of-function-sig>
 
     Examples
-      $ four-byte 0x51c6590a
+      $ 4byte 0x51c6590a
       addLiquidity(uint256)
 `, {
   flags: {
